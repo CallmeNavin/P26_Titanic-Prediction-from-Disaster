@@ -25,6 +25,7 @@ II. Encoding
 III. Split x and y for Training Set
 IV. Train Logistic Regression Model
 V. Predict on Test Data
+VI. Coefficient
 
 **C. Insights**
 
@@ -39,6 +40,16 @@ V. Predict on Test Data
     + Logistic Regression Validation F1 Score: 0.7244094488188977
     + Logistic Regression Validation ROC AUC: 0.8442687747035573
     + Confusion Matrix:[[98 12] [23 46]]
+- Coefficient of Features:
+      Feature  Coefficient
+1         Sex     2.559003
+6  Embarked_Q     0.279081
+5        Fare     0.002237
+2         Age    -0.038560
+4       Parch    -0.070909
+3       SibSp    -0.244583
+7  Embarked_S    -0.382297
+0      Pclass    -1.092230
 
 _**About Me**_
 

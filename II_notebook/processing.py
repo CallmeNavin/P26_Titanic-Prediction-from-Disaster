@@ -69,3 +69,7 @@ test_pred = lr_model.predict(df_test.drop(columns=['PassengerId', 'Name', 'Ticke
 final_predict = pd.DataFrame({'PassengerId': df_test['PassengerId'], 'Survived': test_pred})
 final_predict.to_csv('p26_titanic_prediction_from_disaster/III_output/final_predict.csv', index= False)
 print('Predictions Saved to final_predict.csv')
+
+print('Feature Coefficients from Logistic Regression Model')
+coef_df = pd.DataFrame({'Feature': x.columns,'Coefficient': lr_model.coef_[0]}).sort_values(by='Coefficient', ascending=False)
+print(coef_df)
